@@ -60,3 +60,31 @@
   cursor: pointer;
   font-size: 15px;
 }
+.profile-page {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  flex-wrap: wrap;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.profile-form input {
+  padding: 10px;
+  border: 1px solid #e1e5ee;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.preview {
+  flex: 1;
+  min-width: 280px;
+  border: 1px solid #e1e5ee;
+  border-radius: 8px;
+  padding: 32px;
+}

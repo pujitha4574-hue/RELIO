@@ -1,6 +1,14 @@
+import { useState } from 'react'
 import './App.css'
+import ProfileForm from './ProfileForm'
 
 function App() {
+  const [showForm, setShowForm] = useState(false)
+
+  if (showForm) {
+    return <ProfileForm goBack={() => setShowForm(false)} />
+  }
+
   return (
     <div>
       <nav className="navbar">
@@ -14,7 +22,9 @@ function App() {
       <section className="hero">
         <h1>Build your resume and portfolio in minutes</h1>
         <p>Enter your details once. Get a resume, a CV and a portfolio website.</p>
-        <button className="btn-main">Create my profile</button>
+        <button className="btn-main" onClick={() => setShowForm(true)}>
+          Create my profile
+        </button>
       </section>
 
       <section className="features">
